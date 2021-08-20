@@ -37,24 +37,15 @@ ssh_tty_exec(){
 
 
 trabalhar() {
-  # set -x
   # wmctrl -n 6
-
   mysql-workbench &
   firefox &
-  #gnome-terminal &
   code  &
-
   sleep 5
 
   wmctrl -r firefox -t 4
-
   wmctrl -r code -t 1
-
   wmctrl -r workbench -t 3
-
   wmctrl -r terminal -t 0
-
   wmctrl -a terminal
-
 }
